@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 import Showcase from '../../components/Showcase.astro';
 import { convertPost } from '../../models/Post';
 
-const posts: Post[] = (await getCollection('blog')).map(convertPost).sort(
+const posts: Post[] = (await getCollection('projects')).map(convertPost).sort(
 	(a, b) => b.pubDate.valueOf() - a.pubDate.valueOf(),
 );
 ---
@@ -23,7 +23,7 @@ const posts: Post[] = (await getCollection('blog')).map(convertPost).sort(
 			{posts.length === 0 ? (
 				<h1 style="opacity: .5; user-select: none;">No posts yet &#128539;</h1>
 			) : (
-				<Showcase collection="blog" posts={posts} />
+				<Showcase collection="projects" posts={posts} />
 			)}
 		</main>
 		<Footer />
