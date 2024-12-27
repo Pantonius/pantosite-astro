@@ -1,0 +1,6 @@
+services:
+  pantosite:
+    build: .
+    ports:
+      - "4443:80"
+  
