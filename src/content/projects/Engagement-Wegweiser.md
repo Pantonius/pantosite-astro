@@ -9,7 +9,7 @@ The [Engagement Wegweiser](https://engagement.stuve-uni-kn.de) was originally a 
 Moreover, it was the first IT project that the Student Representation took on to aid the everyday life of students at its university.
 
 ## Current State
-In the beginning there was the [student council website](/projects/fachschaft-website) and I saw that it was good -- so I copied it, threw any unnecessary code out and started work on the actual tool. I changed the header to be more in line with the design of the [University Website](https://www.uni )
+In the beginning there was the [student council website](/projects/fachschaft-website) and I saw that it was good -- so I copied it, threw any unnecessary code out and started work on the actual tool. I changed the header to be more in line with the design of the [University Website](https://www.uni-konstanz.de)
 
 Currently the user simply clicks through a predefined question hierarchy until a list of relevant committees and university groups is presented.
 
