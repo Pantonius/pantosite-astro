@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import { render } from 'astro:content';
 import { convertCollectionPost, convertPost, type Post } from '../../models/Post';
@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 		props: post,
 	}));
 }
-type Props = CollectionEntry<'blog'>;
+type Props = Post;
 
 const post: Post = Astro.props;
 const { Content } = await render(convertCollectionPost(post));
