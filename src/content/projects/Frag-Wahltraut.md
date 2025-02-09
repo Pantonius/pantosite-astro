@@ -1,7 +1,7 @@
 ---
 title: Frag Wahltraut
 pubDate: 2024-12-26T22:00:00Z
-description: Frag Wahltraut
+description: Frag Wahltraut is a tool developed by me for the Student Representation of the University of Konstanz to help students find out which party best represents their own political views in the upcoming university elections.
 heroImage: /images/posts/frag-wahltraut/homepage.png
 ---
 

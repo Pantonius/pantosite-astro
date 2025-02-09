@@ -1,7 +1,7 @@
 ---
 title: Engagement Wegweiser
 pubDate: 2024-12-26T22:00:00Z
-description: Engagement Wegweiser
+description: Engagement Wegweiser is a tool developed by me for the Student Representation of the University of Konstanz to help students find committees and university groups that best suit their particular interests.
 heroImage: /images/posts/engagement-wegweiser/homepage.png
 ---
 The [Engagement Wegweiser](https://engagement.stuve-uni-kn.de) was originally a tool for students to find committees and university groups that best suit their particular interests. Since then it has become a centrepiece of the Student Representation's campaign to encourage more involvement from the student body at the University of Konstanz.
