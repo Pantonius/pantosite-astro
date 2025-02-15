@@ -124,9 +124,17 @@ strong {
 	font-weight: bold;
 }
 
-p {
+p, ul {
 	line-height: 1.5;
-	margin-bottom: 1em;
+	margin: 0;
+}
+
+p + p {
+	margin-top: 1em;
+}
+
+p + ul, p + ol {
+	margin-top: 0.4em;
 }
 
 code {
@@ -144,57 +152,51 @@ code {
 	font-family: "Ubuntu";
 }
 
-quote {
-	width: 80%;
-	text-overflow: clip;
-	color: #ddd;
-}
-
-quote p {
-	margin: 0;
-	padding: 8px;
-	font-weight: 600;
-	line-height: 1.5;
-	text-align: center;
-	color: #aaa;
-}
-
-.prose p {
-	margin-bottom: 2em;
-}
 textarea {
 	width: 100%;
 	font-size: 16px;
 }
+
 input {
 	font-size: 16px;
 }
+
 table {
 	width: 100%;
 }
-img {
-	max-width: 100%;
+
+main img {
+	display: block;
+	background-color: var(--text);
+	color: var(--background);
+	text-align: center;
+	width: 100%;
 	height: auto;
 	border-radius: 8px;
 }
+
 code {
 	padding: 2px 5px;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
 }
+
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
 }
+
 pre > code {
 	all: unset;
 }
+
 blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
 }
+
 hr {
 	border: none;
 	border-top: 1px solid var(--primary);
