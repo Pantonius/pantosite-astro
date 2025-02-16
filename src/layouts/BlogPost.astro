@@ -13,7 +13,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="en">
 	<head>
-	  <BaseHead title={title} description={description} image={heroImage} />
+		<BaseHead title={title} description={description} image={heroImage} />
 		<!-- Katex -->
 		<link
 			rel="stylesheet"
@@ -25,20 +25,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			defer
 			src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
 			integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
-			crossorigin="anonymous"
-		></script>
+			crossorigin="anonymous"></script>
 		<script
 			defer
 			src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
 			integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
 			crossorigin="anonymous"
-			onload="renderMathInElement(document.body);"
-		></script>
+			onload="renderMathInElement(document.body);"></script>
 		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
+			article {
+				width: 100%;
 			}
 
 			h1::after {
