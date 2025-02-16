@@ -28,6 +28,7 @@
 	--text: #ffffff;
 	--text-soft: #ddd;
 	--background: #121212;
+	--background-soft: #212121;
 	--primary: #2df598;
 	--primary-soft: #22cf7e;
 	--secondary: #222021;
@@ -69,16 +70,6 @@ b {
 	font-weight: 700;
 }
 
-a.more {
-	display: block;
-	margin-top: 2em;
-	font-weight: bold;
-}
-
-.indent {
-	margin-left: 2em;
-}
-
 i {
 	font-size: 2rem;
 	color: #ffffff;
@@ -87,6 +78,10 @@ i {
 
 main {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 60vw;
 }
 
@@ -140,16 +135,6 @@ p + ul, p + ol {
 code {
 	font-size: 1.2rem;
 	color: var(--accent);
-}
-
-.wink::after {
-	content: "ಠ_ಠ";
-	font-family: "Ubuntu";
-}
-
-.wink:hover::after {
-	content: "ಠ‿↼";
-	font-family: "Ubuntu";
 }
 
 textarea {
@@ -207,9 +192,14 @@ hr {
 	body {
 		font-size: 18px;
 	}
+	
+	.logo img {
+		height: 18px;
+	}
+
 	main {
 		width: 100vw;
-		padding: 1em;
+		padding: 8px;
 	}
 
 	header .logo {

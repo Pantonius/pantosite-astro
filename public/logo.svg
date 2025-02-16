@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="89" height="45">
+
+<defs>
+    <mask id="eye">
+        <circle cx="0" cy="0" r="13" fill="white"/>
+        <circle cx="0" cy="0" r="8" fill="black"/>
+        <circle cx="0" cy="0" r="3" fill="white"/>
+    </mask>
+</defs>
+
+<path d="M-16 -11 L10 -11 C18 -11, 18 -25, 10 -25 L10 -21 C13 -21, 13 -15, 10 -15  L-16 -15 Z" fill="#FFFFFF" transform="translate(13 25)" />
+<circle cx="0" cy="0" r="13" mask="url(#eye)" fill="white" transform="translate(13 25)"/>
+
+<path d="M-16 -11 L10 -11 C18 -11, 18 -25, 10 -25 L10 -21 C13 -21, 13 -15, 10 -15  L-16 -15 Z" fill="#FFFFFF" transform="translate(73 25)" />
+<circle cx="0" cy="0" r="13" mask="url(#eye)" fill="#FFFFFF" transform="translate(73 25)"/>
+
+<path d="M0 3 L25 3 L25 0 L0 0 Z" fill="#FFFFFF" transform="translate(27, 42)" />
+</svg>

@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import Main from "../components/Main.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Showcase from "../components/Showcase.astro";
@@ -19,7 +20,7 @@ const posts: Post[] = (await getCollection("projects"))
 	</head>
 	<body>
 		<Header />
-		<main>
+		<Main>
 			<section id="welcome">
 				<h1>Hi &#128075;, my name is <a href="/about">Anton</a></h1>
 				<h2 class="typeout">
@@ -34,9 +35,9 @@ const posts: Post[] = (await getCollection("projects"))
 			</section>
 
 			<section id="projects">
-				<Showcase color="black" collection="projects" posts={posts} />
+				<Showcase color="var(--text)" collection="projects" posts={posts} />
 			</section>
-		</main>
+		</Main>
 		<Footer />
 	</body><script>
 		const typeout = document.querySelectorAll(".typeout");
@@ -58,13 +59,6 @@ const posts: Post[] = (await getCollection("projects"))
 	</script>
 
 	<style>
-		main {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-
 		section {
 			padding: 2rem;
 			border-radius: .75em;
@@ -82,12 +76,9 @@ const posts: Post[] = (await getCollection("projects"))
 		}
 
 		#projects {
-			background-color: var(--primary);
-			color: var(--background);
-		}
-
-		#projects .title {
-			color: var(--background);
+		  border: 2px solid var(--primary);
+		  border-radius: .75em;
+		  color: var(--text);
 		}
 
 		.buttons {
@@ -109,6 +100,22 @@ const posts: Post[] = (await getCollection("projects"))
 		.buttons a:hover {
 			background-color: var(--accent);
 			transition: background-color 0.2s;
+		}
+
+		@media (max-width: 720px) {
+			max-width: 100%;
+
+			section {
+				padding: 1rem;
+			}
+
+			#welcome h1 {
+				font-size: 1.5rem;
+			}
+
+			#welcome h2 {
+				font-size: 1rem;
+			}
 		}
 	</style>
 </html>

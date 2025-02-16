@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import Main from "../components/Main.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
@@ -12,13 +13,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	</head>
 	<body>
 		<Header />
-		<main>
+		<Main>
 			<h1>Anton Pogrebnjak</h1>
             <p>
                 Really, I don't have much to tell you about myself. Just look at the amazing stuff I've done and written about. That should suffice.
             </p>
             <p style="float: right; text-align: end;">Kind regards,<br>Anton</p>
-		</main>
+		</Main>
 		<Footer />
 	</body>
 

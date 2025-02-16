@@ -1,0 +1,72 @@
+---
+import { ClientRouter } from "astro:transitions";
+---
+<canvas id="dotted-background" transition:persist></canvas>
+<main transition:name="main" transition:animate="slide">
+  <slot />
+</main>
+
+<style>
+  canvas#dotted-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+</style>
+
+<script type="module" transition:persist>
+  let canvas = document.getElementById("dotted-background");
+  let ctx = canvas.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  let gap = 20;
+
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  document.addEventListener("mousemove", (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  });
+
+  let distanceThreshold = .2;
+  let baseOpacity = .05;
+  let baseRadius = 1;
+
+  const draw = () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (let x = gap; x < canvas.width; x += gap) {
+      for (let y = gap; y < canvas.height; y += gap) {
+	// mouse distance
+	const mouseDistance = Math.sqrt(
+	  Math.pow(mouse.x - x, 2) +
+	  Math.pow(mouse.y - y, 2)
+	);
+
+	// normalized mouse distance
+	const normalizedMouseDistance = mouseDistance / Math.sqrt(
+	  Math.pow(canvas.width, 2) +
+	  Math.pow(canvas.height, 2)
+	);
+
+	const opacity = Math.max(baseOpacity, .4 - normalizedMouseDistance / distanceThreshold);
+	const radius = baseRadius + Math.max(0, 1 - normalizedMouseDistance / distanceThreshold);
+
+	// draw dots
+	ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;
+	ctx.beginPath();
+	ctx.arc(x, y, radius, 0, Math.PI * 2);
+	ctx.fill();
+	ctx.closePath();
+      }
+    }
+  };
+
+  setInterval(() => {
+    draw();
+  }, 1000 / 60);
+</script>
