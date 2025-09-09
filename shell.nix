@@ -1,9 +1,14 @@
-{ pkgs ? import <nixpkgs> {} }:
-  pkgs.mkShell {
-    # nativeBuildInputs is usually what you want -- tools you need to run
-    nativeBuildInputs = with pkgs.buildPackages; [ nodejs_22 ];
+{
+  pkgs ? import <nixpkgs> { },
+}:
 
-    shellHook = ''
-      echo "Hello, Nix!"
-    '';
+pkgs.mkShell {
+  packages = with pkgs; [
+    nodejs
+    nodePackages.npm
+  ];
+
+  shellHook = ''
+    echo Welcome!
+  '';
 }

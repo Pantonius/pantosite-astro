@@ -7,10 +7,13 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://pantonius.dev',
-	markdown: {
-		remarkPlugins: [remarkMath],
-		rehypePlugins: [rehypeKatex]
-	},
-	integrations: [mdx(), sitemap()],
+  site: 'https://pantonius.dev',
+  markdown: {
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex]
+  },
+  integrations: [mdx({
+    syntaxHighlight: 'shiki',
+    shikiConfig: { theme: "dracula" },
+  }), sitemap()],
 });
