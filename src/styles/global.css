@@ -27,6 +27,7 @@
 :root {
 	--text: #ffffff;
 	--text-soft: #ddd;
+  --text-softer: #aaa;
 	--background: #121212;
 	--background-soft: #212121;
 	--primary: #2df598;
@@ -180,6 +181,20 @@ blockquote {
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
+}
+
+q {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-style: oblique;
+  margin: 2rem 0;
+
+  quotes: initial;
+
+  border: 2px solid var(--primary);
+  padding: 8px;
 }
 
 hr {
