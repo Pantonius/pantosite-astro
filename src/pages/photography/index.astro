@@ -1,0 +1,29 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Main from '../../components/Main.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+import Gallery from '../../components/Gallery.astro';
+import { convertPhoto } from '../../models/Photo';
+
+const photos: Photo[] = (await getCollection('photography')).map(convertPhoto).sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <Main>
+			{photos.length === 0 ? (
+				<h1 style="opacity: .5; user-select: none;">No photos yet &#128539;</h1>
+        ) : ( <Gallery photos={photos} /> )}
+    </Main>
+    <Footer />
+  </body>
+</html>
+

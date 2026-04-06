@@ -1,0 +1,49 @@
+---
+import type { Photo } from '../models/Photo.ts';
+
+const photos: Photo[] = Astro.props.photos;
+const collection: string = Astro.props.collection;
+
+const color = Astro.props.color || 'var(--text)';
+---
+<section>
+{
+photos.map((photo) => (
+<a href={"photography/" + photo.id}>
+  <img src={photo.src} />
+</a>
+    ))
+}
+</section>
+
+<style define:vars={{ color }}>
+  section {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  a {
+    overflow: hidden;
+    min-height: 200px;
+    max-height: 12.5rem;
+    min-width: 200px;
+    max-width: 12.5rem;
+    flex: 1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+
+    transition: transform .2s;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+</style>

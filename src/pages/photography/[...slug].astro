@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import { render } from 'astro:content';
+import GalleryPhoto from '../../layouts/GalleryPhoto.astro';
+import { convertCollectionPhoto, convertPhoto, type Photo } from '../../models/Photo';
+
+export async function getStaticPaths() {
+	const photos: Photo[] = (await getCollection('photography')).map(convertPhoto);
+	return photos.map((photo) => ({
+		params: { slug: photo.id },
+		props: photo,
+	}));
+}
+type Props = Photo;
+
+const photo: Photo = Astro.props;
+---
+<GalleryPhoto {...photo} />

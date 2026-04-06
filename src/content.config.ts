@@ -1,4 +1,4 @@
-import { glob } from 'astro/loaders';
+import { glob, file } from 'astro/loaders';
 import { defineCollection, z } from 'astro:content';
 
 const bachelor = defineCollection({
@@ -28,6 +28,22 @@ const blog = defineCollection({
     updatedDate: z.coerce.date().optional(),
     heroImage: z.string().optional(),
   }),
+}
+);
+
+const photography = defineCollection({
+  // Load Markdown and MDX files in the `src/content/projects/` directory.
+  loader: file(
+    './src/content/photography/index.json'
+  ),
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    src: z.string(),
+    // Transform string to Date object
+    pubDate: z.coerce.date(),
+  }),
 });
 
 const projects = defineCollection({
@@ -46,4 +62,4 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { bachelor, blog, projects };
+export const collections = { bachelor, blog, photography, projects };
