@@ -9,7 +9,7 @@ const color = Astro.props.color || 'var(--text)';
 <section>
 {
 photos.map((photo) => (
-<a href={"photography/" + photo.id}>
+<a href={"/photography/" + photo.id}>
   <img src={photo.src} />
 </a>
     ))
