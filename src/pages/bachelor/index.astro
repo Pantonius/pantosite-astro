@@ -1,0 +1,67 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro'
+import Main from '../../components/Main.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+import Showcase from '../../components/Showcase.astro';
+import { convertPost } from '../../models/Post';
+
+const posts: Post[] = (await getCollection('bachelor')).map(convertPost).sort(
+	(a, b) => b.pubDate.valueOf() - a.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+    <Main>
+      <div class="seriesHead">
+        <!-- <img class="heroImage" src="" /> -->
+        <h2>Bachelor Thesis (Amended)</h3>
+        <h1>Improving Control-Flow Analysis of Erlang Programs</h2>
+      </div>
+      <p>
+        
+      </p>
+
+			{posts.length === 0 ? (
+				<h1 style="opacity: .5; user-select: none;">No posts yet &#128539;</h1>
+			) : (
+				<Showcase collection="bachelor" posts={posts} />
+			)}
+		</Main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+    div.seriesHead {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    div.seriesHead h1 {
+      margin-top: 0;  
+    }
+
+    div.seriesHead h2 {
+      color: var(--text-softer);
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+
+    img.heroImage {
+      margin-bottom: 0.5rem;
+      border-radius: 12px;
+      height: 360px;
+      object-fit: cover;
+      background-color: var(--secondary);
+    }
+</style>

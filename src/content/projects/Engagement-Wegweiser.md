@@ -2,9 +2,9 @@
 title: Engagement Wegweiser
 pubDate: 2024-12-26T22:00:00Z
 description: Engagement Wegweiser is a tool developed by me for the Student Representation of the University of Konstanz to help students find committees and university groups that best suit their particular interests.
-heroImage: /images/posts/engagement-wegweiser/homepage.png
+heroImage: ../attachments/engagement-wegweiser_homepage.png
 ---
-The [Engagement Wegweiser](https://engagement.stuve-uni-kn.de) was originally a tool for students to find committees and university groups that best suit their particular interests. Since then it has become a centrepiece of the Student Representation's campaign to encourage more involvement from the student body at the University of Konstanz.
+The [Engagement Wegweiser](https://engagement.stuve-uni-kn.de) was originally a tool for students to find committees and university groups that best suit their particular interests. Since then it has become a centerpiece of the Student Representation's campaign to encourage more involvement from the student body at the University of Konstanz.
 
 Moreover, it was the first IT project that the Student Representation took on to aid the everyday life of students at its university.
 
@@ -53,10 +53,10 @@ Behind the scenes extensive information about each committee / group is held in 
 At a later stage I additionally created an editor for the underlying structure of the question hierarchy as well as a form to create, edit and delete committees / groups from the tool.
 
 #### Structure Editor
-![Editor for the question hierarchy](/images/posts/engagement-wegweiser/editor-structure.png)
+![Editor for the question hierarchy](../attachments/engagement-wegweiser-editor-structure.png)
 
 #### Group / Committee Editor
-![Editor for the committees and groups](/images/posts/engagement-wegweiser/editor-hsg.png)
+![Editor for the committees and groups](../attachments/engagement-wegweiser-editor-hsg.png)
 
 ## To the Stars
 I am currently working on a new version of the Engagement Wegweiser with [Astro](https://astro.build/) as its backbone and Vue for any interactive islands. The hope is to make the tool more robust, reduce loading times and improve the documentation of the tool. 

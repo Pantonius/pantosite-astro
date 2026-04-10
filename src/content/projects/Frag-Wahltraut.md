@@ -2,7 +2,7 @@
 title: Frag Wahltraut
 pubDate: 2024-12-26T22:00:00Z
 description: Frag Wahltraut is a tool developed by me for the Student Representation of the University of Konstanz to help students find out which party best represents their own political views in the upcoming university elections.
-heroImage: /images/posts/frag-wahltraut/homepage.png
+heroImage: ../attachments/frag-wahltraut_homepage.png
 ---
 
 Towards the end of the summer semester two elections take place at the University of Kosntanz; One for university committees and another for student committees. Historically the voter turnout has been low, mostly because as a student, you rarely get to know much about what is decided in the committees and how those decisions may or may not affect your own studies -- that's a problem to be tackled by the university, the student representation and, perhaps best, the student councils.
@@ -14,7 +14,7 @@ In national and state elections as well as the election for the european parliam
 ## Copy Paste
 It seems to be a central theme with my websites that they are all descendants of one another. In this case Frag Wahltraut already kindof existed eight months before it got that name. It was the very first proof of concept for the [Engagement Wegweiser](https://engagement.stuve-uni-kn.de) -- and it shows.
 
-![Engagement Wegweiser](/images/posts/engagement-wegweiser/homepage.png)
+![Engagement Wegweiser](../attachments/frag-wahltraut_homepage.png)
 
 ## Core Mechanic
 However, the core mechanic (currently) differs. There are three stages to the tool:
@@ -28,7 +28,7 @@ Which roughly corresponds to the original [Wahl-O-Mat](https://www.wahl-o-mat.de
 ### 1. Theses
 In this first stage the user simply answers the theses presented by the tool with `agree`, `neutral` or `don't agree` or skips the thesis, which will take it out of the overall scoring entirely.
 
-![Theses page of Frag Wahltraut](/images/posts/frag-wahltraut/theses.png)
+![Theses page of Frag Wahltraut](../attachments/frag-wahltraut_theses.png)
 
 - `Agree` corresponds to `0`
 - `Neutral` corresponds to `1`
@@ -37,18 +37,18 @@ In this first stage the user simply answers the theses presented by the tool wit
 ### 2. Weighting
 In the second stage the user can take a look at the decisions taken and give any number of them double the weight in the computation of the overall result.
 
-![Weighting page of Frag Wahltraut](/images/posts/frag-wahltraut/weighting.png)
+![Weighting page of Frag Wahltraut](../attachments/frag-wahltraut_weighting.png)
 
 They may also navigate back to a particular question and change their answer.
 
 ### 3. Result
 In the final stage the result is presented to the user.
 
-![Result page of Frag Wahltraut](/images/posts/frag-wahltraut/result.png)
+![Result page of Frag Wahltraut](../attachments/frag-wahltraut_result.png)
 
 Clicking on the parties reveals their stances on the theses as well as a short(-ish) explaination of their view.
 
-![Result page of Frag Wahltraut with more information to the stances of a party](/images/posts/frag-wahltraut/result-accordion.png)
+![Result page of Frag Wahltraut with more information to the stances of a party](../attachments/frag-wahltraut_result_accordion.png)
 
 ## To the Stars
 As described in my article about the [Engagement Wegweiser](/projects/engagement-wegweiser) I am currently working on a revamp of the tools that are provided by the Student Representation of the University Konstanz. Once the new version of the Engagement Wegweiser is done, Frag Wahltraut will once again become a descendant of that newer version. Thankfully, at its core, the future Engagement Wegweiser will function as a generalized version of Frag Wahltraut, making it extremely easy to reuse the system for the coming elections in 2025.

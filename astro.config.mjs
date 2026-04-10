@@ -7,6 +7,9 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+  vite: {
+    assetsInclude: ['**/*.base', '**/.obsidian/**', '**/_bases/**'],
+  },
   site: 'https://pantonius.dev',
   markdown: {
     remarkPlugins: [remarkMath],

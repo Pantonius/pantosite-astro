@@ -15,7 +15,7 @@ const color = Astro.props.color || 'var(--text)';
                     <a href={`/${collection}/${post.id}/`}>
                         {
                             post.heroImage && (
-                                <img class="heroImage" src={post.heroImage} alt="" />
+                                <img class="heroImage" src={post.heroImage.src} alt="" />
                             )
                         }
                         {

@@ -1,0 +1,70 @@
+{
+  "defaultTemplate": "---\ntitle: \"{{title}}\"\npubDate: {{date}}\ndescription: \"\"\nheroImage: \"\"\n---\n",
+  "autoInsertProperties": true,
+  "dateFormat": "YYYY-MM-DD",
+  "enableCopyHeadingLink": true,
+  "copyHeadingLinkFormat": "astro",
+  "addTrailingSlashToLinks": true,
+  "enableOpenTerminalCommand": true,
+  "terminalProjectRootPath": "../..",
+  "terminalApplicationName": "",
+  "enableTerminalDebugLogging": false,
+  "enableTerminalRibbonIcon": true,
+  "enableOpenConfigFileCommand": true,
+  "configFilePath": "../../astro.config.mjs",
+  "enableConfigRibbonIcon": true,
+  "contentTypes": [
+    {
+      "id": "content-type-1775852991942-ai56rw2lw",
+      "name": "Blog",
+      "folder": "blog",
+      "linkBasePath": "/blog/",
+      "template": "---\ntitle: \"{{title}}\"\npubDate: {{date}}\ndescription: \"\"\nheroImage: \"\"\n---\n",
+      "enabled": true,
+      "creationMode": "file",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
+    },
+    {
+      "id": "content-type-1775852991942-7eiqfk6yj",
+      "name": "Bachelor",
+      "folder": "bachelor",
+      "linkBasePath": "/bachelor/",
+      "template": "---\ntitle: \"{{title}}\"\npubDate: {{date}}\ndescription: \"\"\nheroImage: \"\"\npart: 1\n---\n",
+      "enabled": true,
+      "creationMode": "file",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
+    },
+    {
+      "id": "content-type-1775852991942-gvtf8m5h6",
+      "name": "Projects",
+      "folder": "projects",
+      "linkBasePath": "/projects/",
+      "template": "---\ntitle: \"{{title}}\"\npubDate: {{date}}\ndescription: \"\"\nheroImage: \"\"\n---\n",
+      "enabled": true,
+      "creationMode": "file",
+      "indexFileName": "index",
+      "ignoreSubfolders": false,
+      "enableUnderscorePrefix": false
+    }
+  ],
+  "migrationCompleted": true,
+  "helpButtonReplacement": {
+    "enabled": true,
+    "commandId": "astro-composer:edit-astro-config",
+    "iconId": "rocket"
+  },
+  "showMdxFilesInExplorer": true,
+  "processBackgroundFileChanges": true,
+  "syncDraftDate": false,
+  "draftDetectionMode": "property",
+  "draftProperty": "",
+  "draftLogic": "true-is-draft",
+  "publishDateField": "pubDate",
+  "renameOnTitleClick": false,
+  "updateModifiedDate": false,
+  "modifiedDateField": ""
+}

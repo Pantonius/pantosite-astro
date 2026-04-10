@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Main from "../components/Main.astro";
@@ -105,9 +106,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					{
 						heroImage && (
 							<img
-								width={1020}
-								height={510}
-								src={heroImage}
+								width={heroImage.width}
+								height={heroImage.height}
+                src={heroImage.src}
 								alt=""
 							/>
 						)

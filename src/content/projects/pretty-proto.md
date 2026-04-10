@@ -3,7 +3,7 @@ title: Pretty Proto
 pubDate: 2024-03-12T04:00:00Z
 lastUpdate: 2024-12-27T19:00:00Z
 description: pretty-proto is a neat little script designed to simplify and standardize the creation of pretty protocols
-heroImage: /images/posts/pretty-proto/hero.png
+heroImage: ../attachments/pretty-proto_hero.png
 ---
 Once again a project that heralds from my deep desire to make things pretty that are currently ugly. And once again a project that started (surprise surprise) in the student council of the computer science department.
 Initially it was only meant to be a neat little script that converts a Markdown file into a pretty little PDF file via [pandoc](https://pandoc.org) that roughly matches some sort of corporate design of the student council and the University of Konstanz.

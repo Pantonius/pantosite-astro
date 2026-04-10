@@ -5,17 +5,17 @@ import Socials from "./Socials.astro";
 ---
 
 <header>
-	<nav>
+  <nav class="head">
 	  <a class="logo" href="/">
 	    <img src="/logo.svg" alt="ಠ_ಠ" />
 	  </a>
-		<div class="internal-links">
-			<HeaderLink href="/projects">Projects</HeaderLink>
-			<HeaderLink href="/photography">Photography</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
-    </div>
-    <Socials />
+    <Socials/>
 	</nav>
+  <nav class="internal-links">
+    <HeaderLink href="/projects">Projects</HeaderLink>
+    <HeaderLink href="/photography">Photography</HeaderLink>
+    <HeaderLink href="/blog">Blog</HeaderLink>
+  </nav>
 </header>
 
 <ClientRouter />
@@ -23,10 +23,22 @@ import Socials from "./Socials.astro";
 <style>
 	header {
 		margin: 0;
-		padding: 0 1em;
+    padding: .5em 1em;
 		width: 100%;
-		background-color: var(--background-soft);
-	}
+    background-color: var(--background-soft);
+
+    display: flex;
+    flex-direction: row;
+		align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
 	header .logo {
 		display: flex;
@@ -41,32 +53,46 @@ import Socials from "./Socials.astro";
 		height: 24pt;
 	}
 
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+  .internal-links {
 
-	nav a {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    left: 0; 
+    right: 0; 
+  }
+
+  .internal-links a {
 		padding: .4em 0.5em;
 		color: var(--text);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
-	}
+  }
 
-	nav a.active {
+  .internal-links a.active {
 		text-decoration: none;
 		border-bottom-color: var(--primary);
 	}
 
+  @media (max-width: 720px) {
+    header {
+      flex-direction: column;
+      padding: 0;
+    }
 
-	@media (max-width: 720px) {
 	  header .logo img {
 	    height: 18pt;
-	  }
+    }
 
-	  nav {
-	    font-size: 16px;
-	  }
+    nav.head {
+      padding: .5em 1em;
+    }
+
+    .internal-links {
+      border-top: var(--background) 1px solid;
+      position: relative;
+    }
 	}
 </style>

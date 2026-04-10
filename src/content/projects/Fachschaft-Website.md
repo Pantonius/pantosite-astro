@@ -1,11 +1,11 @@
 ---
 title: Student Council Website
 pubDate: 2024-03-12T03:15:00Z
-description: The story of how I created the Website for the student council of the computer science department
-heroImage: /images/posts/student-council-website/homepage.png
+description: The story of how I created the website for the computer science student council at the University of Konstanz. At least the first of three versions.
+heroImage: ../attachments/student-council-website_homepage.png
 ---
 ## Humble Beginnings
-![](/images/posts/student-council-website/homepage.png)
+![The new student council website in light mode.](../attachments/student-council-website_homepage.png)
 
 When I started out in university I didn't pay much attention to the student council's website. At first, I didn't even know that there existed one. Not that that would have made a difference...
 
@@ -35,7 +35,7 @@ And yet more time was spent reworking the old Markdown code to take advantage of
 ### Dark Mode
 As soon as I showed my demo of the new website for the student council, the wish for a dark mode surfaced -- I half expected that to be honest; What would a computer nerd be without their dark mode. I quite liked the light mode that I had stitched together, but I liked the challenge of hacking a color mode switch into existence.
 
-![](/filehost/images/student-council-website/homepage-dark.png)
+![The new student council website in dark mode.](../attachments/student-council-website_homepage_dark.png)
 
 The addition of the dark mode was fairly simple. I already got into the habit of working with CSS variables; possibly due to the emergence of [Juxtopposed](https://www.youtube.com/@juxtopposed) which gave the world the nifty little toy of [Realtime Colors](https://www.realtimecolors.com).
 

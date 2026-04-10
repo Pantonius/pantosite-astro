@@ -1,0 +1,2147 @@
+{
+  "scanDirectories": "bachelor,blog,projects",
+  "ignoreUnderscoreFiles": false,
+  "enableMDXSupport": true,
+  "keywordProperty": "",
+  "descriptionProperty": "description",
+  "titleProperty": "title",
+  "useFilenameAsTitle": false,
+  "slugProperty": "",
+  "useFilenameAsSlug": true,
+  "parentFolderSlugFilename": "index",
+  "titlePrefixSuffix": "",
+  "checkTitleLength": true,
+  "checkHeadingOrder": true,
+  "checkAltText": true,
+  "checkImageNaming": true,
+  "checkBrokenLinks": true,
+  "checkExternalLinks": true,
+  "enableExternalLinkButton": true,
+  "enableExternalLinkVaultCheck": false,
+  "checkNakedLinks": true,
+  "checkContentLength": true,
+  "checkDuplicateContent": false,
+  "checkReadingLevel": true,
+  "checkPotentiallyBrokenLinks": true,
+  "checkPotentiallyBrokenEmbeds": true,
+  "useNoteTitles": true,
+  "skipH1Check": true,
+  "publishMode": true,
+  "defaultSort": "issues-desc",
+  "showRibbonIcon": true,
+  "exportFormat": "csv",
+  "minContentLength": 300,
+  "keywordDensityMin": 1,
+  "keywordDensityMax": 2,
+  "duplicateThreshold": 80,
+  "cachedGlobalResults": [
+    {
+      "file": "bachelor/meta/M-meta.md",
+      "displayName": "M - Experiences and Additional Thoughts",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 39 characters",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 88 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 349 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": false,
+            "message": "Naked link found: https://github.com/erlang/otp/tree/master/lib/compiler/src,",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 24,
+              "searchText": "https://github.com/erlang/otp/tree/master/lib/compiler/src,",
+              "context": "\n[^aam]: <!-- TODO -->\n[^erlc]: https://github.com/erlang/otp/tree/master/lib/compiler/src, visited 10th September 2025\n[^receive-lowering]: https://github.com/erlang/otp/commit/82645f41a29b9af18cddac0b338dd2c856eb09a1, visited 14th August 2025\n"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Naked link found: https://github.com/erlang/otp/commit/82645f41a29b9af18cddac0b338dd2c856eb09a1,",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 25,
+              "searchText": "https://github.com/erlang/otp/commit/82645f41a29b9af18cddac0b338dd2c856eb09a1,",
+              "context": "[^aam]: <!-- TODO -->\n[^erlc]: https://github.com/erlang/otp/tree/master/lib/compiler/src, visited 10th September 2025\n[^receive-lowering]: https://github.com/erlang/otp/commit/82645f41a29b9af18cddac0b338dd2c856eb09a1, visited 14th August 2025\n"
+            }
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://github.com/damaruCode/soter-v2",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 20,
+              "searchText": "https://github.com/damaruCode/soter-v2",
+              "context": "\n# Core Erlang Documentation\nTruthfully, finding good documentation for Erlang and its intermediary language Core Erlang has been tough. The best place for a formal definition of Core Erlang syntax and semantics has been the source code of the Erlang/OTP compiler[^erlc]. The key insight here is that Core Erlang isn't really meant to be used outside of the OTP compilation pipeline; There isn't much of an incentive to pin it down. Unfortunately, this also means that [soter-v2](https://github.com/damaruCode/soter-v2) is somewhat thrown into the whims of any changes to the erlang compiler. A fact that can already be seen by the desugaring of the `receive` keyword down to four atomic keywords since OTP 25[^receive-lowering] leading to our choice of pinning the version to OTP 24 for soter-v2.\n\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://github.com/erlang/otp/tree/master/lib/compiler/src,",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 24,
+              "searchText": "https://github.com/erlang/otp/tree/master/lib/compiler/src,",
+              "context": "\n[^aam]: <!-- TODO -->\n[^erlc]: https://github.com/erlang/otp/tree/master/lib/compiler/src, visited 10th September 2025\n[^receive-lowering]: https://github.com/erlang/otp/commit/82645f41a29b9af18cddac0b338dd2c856eb09a1, visited 14th August 2025\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://github.com/erlang/otp/commit/82645f41a29b9af18cddac0b338dd2c856eb09a1,",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 25,
+              "searchText": "https://github.com/erlang/otp/commit/82645f41a29b9af18cddac0b338dd2c856eb09a1,",
+              "context": "[^aam]: <!-- TODO -->\n[^erlc]: https://github.com/erlang/otp/tree/master/lib/compiler/src, visited 10th September 2025\n[^receive-lowering]: https://github.com/erlang/otp/commit/82645f41a29b9af18cddac0b338dd2c856eb09a1, visited 14th August 2025\n"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 11.9 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 68,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 3
+    },
+    {
+      "file": "bachelor/appendix/A1-ceskpt.md",
+      "displayName": "A1 - CEK Machine",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 16 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 99 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 41 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 3.6 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "bachelor/06-conclusion.md",
+      "displayName": "06 - Conclusion",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 15 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 88 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 1 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -3.4 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "bachelor/05-evaluation.md",
+      "displayName": "05 - Evaluation",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 15 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 88 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 1 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -3.4 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "bachelor/04-implementation.md",
+      "displayName": "04 - Implementation",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 19 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 88 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 1 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -3.4 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "bachelor/03-core-development.md",
+      "displayName": "03 - Core Development",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 21 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 88 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 1 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -3.4 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "bachelor/02-background.md",
+      "displayName": "02 - Background",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 15 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 88 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 1 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -3.4 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "bachelor/01-introduction.md",
+      "displayName": "01 - Introduction",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 17 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 141 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 107 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": false,
+            "message": "Naked link found: https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/,",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 11,
+              "searchText": "https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/,",
+              "context": "Core Erlang is an intermediary language produced during compilation to BEAM[^the-beam-book].\n\n[^whatsapp-erl]: https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/, visited 9th September 2025\n[^discord-erl]: https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users, visited 9th September 2025\n[^the-beam-book]: I recommend reading [The BEAM Book by Erik Stenman](https://blog.stenmans.org/theBeamBook). To my knowledge, it is the most complete work on the topic, that I was able to find; Except for the [source code](https://github.com/erlang/otp) itself, that is."
+            }
+          },
+          {
+            "passed": false,
+            "message": "Naked link found: https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users,",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 12,
+              "searchText": "https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users,",
+              "context": "\n[^whatsapp-erl]: https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/, visited 9th September 2025\n[^discord-erl]: https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users, visited 9th September 2025\n[^the-beam-book]: I recommend reading [The BEAM Book by Erik Stenman](https://blog.stenmans.org/theBeamBook). To my knowledge, it is the most complete work on the topic, that I was able to find; Except for the [source code](https://github.com/erlang/otp) itself, that is.\n"
+            }
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://blog.stenmans.org/theBeamBook",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 13,
+              "searchText": "https://blog.stenmans.org/theBeamBook",
+              "context": "[^whatsapp-erl]: https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/, visited 9th September 2025\n[^discord-erl]: https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users, visited 9th September 2025\n[^the-beam-book]: I recommend reading [The BEAM Book by Erik Stenman](https://blog.stenmans.org/theBeamBook). To my knowledge, it is the most complete work on the topic, that I was able to find; Except for the [source code](https://github.com/erlang/otp) itself, that is.\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://github.com/erlang/otp",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 13,
+              "searchText": "https://github.com/erlang/otp",
+              "context": "[^whatsapp-erl]: https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/, visited 9th September 2025\n[^discord-erl]: https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users, visited 9th September 2025\n[^the-beam-book]: I recommend reading [The BEAM Book by Erik Stenman](https://blog.stenmans.org/theBeamBook). To my knowledge, it is the most complete work on the topic, that I was able to find; Except for the [source code](https://github.com/erlang/otp) itself, that is.\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/,",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 11,
+              "searchText": "https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/,",
+              "context": "Core Erlang is an intermediary language produced during compilation to BEAM[^the-beam-book].\n\n[^whatsapp-erl]: https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/, visited 9th September 2025\n[^discord-erl]: https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users, visited 9th September 2025\n[^the-beam-book]: I recommend reading [The BEAM Book by Erik Stenman](https://blog.stenmans.org/theBeamBook). To my knowledge, it is the most complete work on the topic, that I was able to find; Except for the [source code](https://github.com/erlang/otp) itself, that is."
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users,",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users,",
+              "context": "\n[^whatsapp-erl]: https://www.erlang-solutions.com/blog/20-years-of-open-source-erlang-openerlang-interview-with-anton-lavrik-from-whatsapp/, visited 9th September 2025\n[^discord-erl]: https://discord.com/blog/how-discord-scaled-elixir-to-5-000-000-concurrent-users, visited 9th September 2025\n[^the-beam-book]: I recommend reading [The BEAM Book by Erik Stenman](https://blog.stenmans.org/theBeamBook). To my knowledge, it is the most complete work on the topic, that I was able to find; Except for the [source code](https://github.com/erlang/otp) itself, that is.\n"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 16.4 (Difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 55,
+      "issuesCount": 0,
+      "warningsCount": 6,
+      "noticesCount": 4
+    },
+    {
+      "file": "blog/eyes-of-an-infant.md",
+      "displayName": "Eyes of an Infant",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 17 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 0 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 1 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: -3.4 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "blog/tikz-svg.mdx",
+      "displayName": "TikZ",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 4 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 43 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 140 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://tikz.dev/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 8,
+              "searchText": "https://tikz.dev/",
+              "context": "At some point a man has to realize that they went down a rabbit-hole without any way to escape it. TikZ is one such rabbit-hole and, yes, I am that man.\n\nIn broad terms [TikZ](https://tikz.dev/) is a programming language within [LaTeX](https://www.latex-project.org/), to generate graphics from code.\n\n# Standalone TikZ"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.latex-project.org/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 8,
+              "searchText": "https://www.latex-project.org/",
+              "context": "At some point a man has to realize that they went down a rabbit-hole without any way to escape it. TikZ is one such rabbit-hole and, yes, I am that man.\n\nIn broad terms [TikZ](https://tikz.dev/) is a programming language within [LaTeX](https://www.latex-project.org/), to generate graphics from code.\n\n# Standalone TikZ"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://ctan.org/pkg/standalone",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 11,
+              "searchText": "https://ctan.org/pkg/standalone",
+              "context": "\n# Standalone TikZ\nThe [standalone package](https://ctan.org/pkg/standalone) for LaTeX is inteded as a way to put graphics such as those generated by TikZ into a standalone document to be included in other documents. We are going to use it to generate a pdf with the TikZ graphic.\n```latex\n% graphic.tex"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cityinthesky.co.uk/opensource/pdf2svg/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 29,
+              "searchText": "https://cityinthesky.co.uk/opensource/pdf2svg/",
+              "context": "\n# Convert to SVG\nTo convert this pdf into a svg file we are going to use the [pdf2svg](https://cityinthesky.co.uk/opensource/pdf2svg/) command-line converter:\n```shell\npdf2svg graphic.tex"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 6.7 (Easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 4
+    },
+    {
+      "file": "projects/pretty-proto.md",
+      "displayName": "Pretty Proto",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 12 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 106 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 980 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://pandoc.org",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 9,
+              "searchText": "https://pandoc.org",
+              "context": "---\nOnce again a project that heralds from my deep desire to make things pretty that are currently ugly. And once again a project that started (surprise surprise) in the student council of the computer science department.\nInitially it was only meant to be a neat little script that converts a Markdown file into a pretty little PDF file via [pandoc](https://pandoc.org) that roughly matches some sort of corporate design of the student council and the University of Konstanz.\n\n## Pretty Please"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://learnbyexample.github.io/customizing-pandoc/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "https://learnbyexample.github.io/customizing-pandoc/",
+              "context": "\n## Pretty Please\nPandoc **does** allow a lot of customization along its pipeline as showcased in [\"Customizing pandoc to generate beautiful pdf and epub from markdown\"](https://learnbyexample.github.io/customizing-pandoc/) by [learnbyexample](https://learnbyexample.github.io/).\n\nSo the core command of pretty proto looks like this:"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://learnbyexample.github.io/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "https://learnbyexample.github.io/",
+              "context": "\n## Pretty Please\nPandoc **does** allow a lot of customization along its pipeline as showcased in [\"Customizing pandoc to generate beautiful pdf and epub from markdown\"](https://learnbyexample.github.io/customizing-pandoc/) by [learnbyexample](https://learnbyexample.github.io/).\n\nSo the core command of pretty proto looks like this:"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://ctan.org/pkg/csquotes",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 53,
+              "searchText": "https://ctan.org/pkg/csquotes",
+              "context": "  - `toc-depth` sets the depth to which the table of contents should list headings\n  - `lang` sets the language of the document\n  - `csquotes` controls whether the [csquotes tex package](https://ctan.org/pkg/csquotes) will be used for typography\n- `-t pdf` tells pandoc to convert to a PDF document\n- `--pdf-engine=xelatex` specifies that the [XeLaTeX](https://www.overleaf.com/learn/latex/XeLaTeX) typesetting engine should be used, which allows for different fonts and colors in the PDF document"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.overleaf.com/learn/latex/XeLaTeX",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 55,
+              "searchText": "https://www.overleaf.com/learn/latex/XeLaTeX",
+              "context": "  - `csquotes` controls whether the [csquotes tex package](https://ctan.org/pkg/csquotes) will be used for typography\n- `-t pdf` tells pandoc to convert to a PDF document\n- `--pdf-engine=xelatex` specifies that the [XeLaTeX](https://www.overleaf.com/learn/latex/XeLaTeX) typesetting engine should be used, which allows for different fonts and colors in the PDF document\n- `-o` specifies where the output should be piped into\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.sharelatex.com/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 58,
+              "searchText": "https://www.sharelatex.com/",
+              "context": "- `-o` specifies where the output should be piped into\n\nAs I got more serious about aligning the script with its predecessor in the student council (which really only was a fancy downloader for a self-hosted instance of [Sharelatex](https://www.sharelatex.com/)), the script grew in complexity.\n\nThe wish to make the usage of the script as easy as possible increased that complexity -- pretty-proto has a lot of default assumptions baked into it, to ease the use."
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://hedgedoc.org/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 100,
+              "searchText": "https://hedgedoc.org/",
+              "context": "\n### HedgeDoc\nAfter some time, and after taking over the chairmanship of the student council meetings, I switched to a [HedgeDoc](https://hedgedoc.org/) instance for the transcripts. Which ofcourse lead to me having to accommodate the ability to automagically download and compile the current transcript from HedgeDoc as well.\n\n- `-H, --hedgedoc` signals pretty-proto to download the markdown file from a HedgeDoc instance"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 13.6 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 7
+    },
+    {
+      "file": "projects/Frag-Wahltraut.md",
+      "displayName": "Frag Wahltraut",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 14 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too long: 219 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 551 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Relative path link: Engagement Wegweiser",
+            "suggestion": "This link may be valid for static site generators but may not work in Obsidian",
+            "severity": "notice",
+            "position": {
+              "line": 54,
+              "searchText": "[Engagement Wegweiser](/projects/engagement-wegweiser)",
+              "context": "\n## To the Stars\nAs described in my article about the [Engagement Wegweiser](/projects/engagement-wegweiser) I am currently working on a revamp of the tools that are provided by the Student Representation of the University Konstanz. Once the new version of the Engagement Wegweiser is done, Frag Wahltraut will once again become a descendant of that newer version. Thankfully, at its core, the future Engagement Wegweiser will function as a generalized version of Frag Wahltraut, making it extremely easy to reuse the system for the coming elections in 2025.\n"
+            }
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/",
+              "context": "However, another factor is, that most students don't know the people and parties running for various committees and the student parlament.\n\nIn national and state elections as well as the election for the european parliament the [Federal Agency for Civic Education](https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/) here in germany prepares and hosts a tool called the [Wahl-O-Mat](https://www.wahl-o-mat.de), which presents somewhere around 35 political theses that a user can answer with \"agree\", \"neutral\" and \"don't agree\" or skip to get an overview of political parties that might best represent the users own political views. The Student Representation of the University of Konstanz decided to develop and host their very own version of that Wahl-O-Mat called [Frag Wahltraut](https://wahl.stuve-uni-kn.de).\n\n## Copy Paste"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.wahl-o-mat.de",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "https://www.wahl-o-mat.de",
+              "context": "However, another factor is, that most students don't know the people and parties running for various committees and the student parlament.\n\nIn national and state elections as well as the election for the european parliament the [Federal Agency for Civic Education](https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/) here in germany prepares and hosts a tool called the [Wahl-O-Mat](https://www.wahl-o-mat.de), which presents somewhere around 35 political theses that a user can answer with \"agree\", \"neutral\" and \"don't agree\" or skip to get an overview of political parties that might best represent the users own political views. The Student Representation of the University of Konstanz decided to develop and host their very own version of that Wahl-O-Mat called [Frag Wahltraut](https://wahl.stuve-uni-kn.de).\n\n## Copy Paste"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://wahl.stuve-uni-kn.de",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "https://wahl.stuve-uni-kn.de",
+              "context": "However, another factor is, that most students don't know the people and parties running for various committees and the student parlament.\n\nIn national and state elections as well as the election for the european parliament the [Federal Agency for Civic Education](https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/) here in germany prepares and hosts a tool called the [Wahl-O-Mat](https://www.wahl-o-mat.de), which presents somewhere around 35 political theses that a user can answer with \"agree\", \"neutral\" and \"don't agree\" or skip to get an overview of political parties that might best represent the users own political views. The Student Representation of the University of Konstanz decided to develop and host their very own version of that Wahl-O-Mat called [Frag Wahltraut](https://wahl.stuve-uni-kn.de).\n\n## Copy Paste"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://engagement.stuve-uni-kn.de",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 15,
+              "searchText": "https://engagement.stuve-uni-kn.de",
+              "context": "\n## Copy Paste\nIt seems to be a central theme with my websites that they are all descendants of one another. In this case Frag Wahltraut already kindof existed eight months before it got that name. It was the very first proof of concept for the [Engagement Wegweiser](https://engagement.stuve-uni-kn.de) -- and it shows.\n\n![Engagement Wegweiser](../attachments/frag-wahltraut_homepage.png)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.bpb.de/themen/wahl-o-mat/294576/wie-funktioniert-der-wahl-o-mat/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 26,
+              "searchText": "https://www.bpb.de/themen/wahl-o-mat/294576/wie-funktioniert-der-wahl-o-mat/",
+              "context": "- [3. Result](#3-result)\n\nWhich roughly corresponds to the original [Wahl-O-Mat](https://www.wahl-o-mat.de) as described in the article [\"Wie funktioniert der Wahl-O-Mat?\"](https://www.bpb.de/themen/wahl-o-mat/294576/wie-funktioniert-der-wahl-o-mat/) by the [Federal Agency for Civic Education](https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/). The [computational model](https://www.bpb.de/system/files/dokument_pdf/Rechenmodell_des_Wahl-O-Mat.pdf) can easily found in said article.\n\n### 1. Theses"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.bpb.de/system/files/dokument_pdf/Rechenmodell_des_Wahl-O-Mat.pdf",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 26,
+              "searchText": "https://www.bpb.de/system/files/dokument_pdf/Rechenmodell_des_Wahl-O-Mat.pdf",
+              "context": "- [3. Result](#3-result)\n\nWhich roughly corresponds to the original [Wahl-O-Mat](https://www.wahl-o-mat.de) as described in the article [\"Wie funktioniert der Wahl-O-Mat?\"](https://www.bpb.de/themen/wahl-o-mat/294576/wie-funktioniert-der-wahl-o-mat/) by the [Federal Agency for Civic Education](https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/). The [computational model](https://www.bpb.de/system/files/dokument_pdf/Rechenmodell_des_Wahl-O-Mat.pdf) can easily found in said article.\n\n### 1. Theses"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 10.2 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 70,
+      "issuesCount": 0,
+      "warningsCount": 3,
+      "noticesCount": 7
+    },
+    {
+      "file": "projects/Fachschaft-Website.md",
+      "displayName": "Student Council Website",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 23 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": true,
+            "message": "Good description length: 148 characters",
+            "severity": "info"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 1059 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Found 7 external link(s), all appear to resolve and are working",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 8.2 (Easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 85,
+      "issuesCount": 0,
+      "warningsCount": 2,
+      "noticesCount": 0
+    },
+    {
+      "file": "projects/Engagement-Wegweiser.md",
+      "displayName": "Engagement Wegweiser",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 20 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too long: 205 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 697 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "Relative path link: student council website",
+            "suggestion": "This link may be valid for static site generators but may not work in Obsidian",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "[student council website](/projects/fachschaft-website)",
+              "context": "\n## Current State\nIn the beginning there was the [student council website](/projects/fachschaft-website) and I saw that it was good -- so I copied it, threw any unnecessary code out and started work on the actual tool. I changed the header to be more in line with the design of the [University Website](https://www.uni-konstanz.de)\n\nCurrently the user simply clicks through a predefined question hierarchy until a list of relevant committees and university groups is presented."
+            }
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://engagement.stuve-uni-kn.de",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 7,
+              "searchText": "https://engagement.stuve-uni-kn.de",
+              "context": "heroImage: ../attachments/engagement-wegweiser_homepage.png\n---\nThe [Engagement Wegweiser](https://engagement.stuve-uni-kn.de) was originally a tool for students to find committees and university groups that best suit their particular interests. Since then it has become a centerpiece of the Student Representation's campaign to encourage more involvement from the student body at the University of Konstanz.\n\nMoreover, it was the first IT project that the Student Representation took on to aid the everyday life of students at its university."
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.uni-konstanz.de",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "https://www.uni-konstanz.de",
+              "context": "\n## Current State\nIn the beginning there was the [student council website](/projects/fachschaft-website) and I saw that it was good -- so I copied it, threw any unnecessary code out and started work on the actual tool. I changed the header to be more in line with the design of the [University Website](https://www.uni-konstanz.de)\n\nCurrently the user simply clicks through a predefined question hierarchy until a list of relevant committees and university groups is presented."
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://engagement.stuve-uni-kn.de/app?path=Root,Social,Gremien,GremienStud&answer=0",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 49,
+              "searchText": "https://engagement.stuve-uni-kn.de/app?path=Root,Social,Gremien,GremienStud&answer=0",
+              "context": "### The Application\nBehind the scenes extensive information about each committee / group is held in a CSV file, including but not limited to their website, social media accounts, email adress and ofcourse a short description. Thus every committee and group has their own little information page in the tool, though it might not be linked anywhere, as can be seen with the computer science student council:\n- if you navigate to [Start > Soziales & Politik > Ja, Studi-Themen! > studentische Selbstverwaltung > Fach](https://engagement.stuve-uni-kn.de/app?path=Root,Social,Gremien,GremienStud&answer=0) and click on \"Fachschaft Informatik\", you'll end up on the [student council website](https://fachschaft.inf.uni-konstanz.de)\n- if you instead simply use the path [/hsg/FSInformatik](https://engagement.stuve-uni-kn.de/hsg/FSInformatik), you'll end up on the special information page as generated from the extensive information that has been stored in the tool.\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://fachschaft.inf.uni-konstanz.de",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 49,
+              "searchText": "https://fachschaft.inf.uni-konstanz.de",
+              "context": "### The Application\nBehind the scenes extensive information about each committee / group is held in a CSV file, including but not limited to their website, social media accounts, email adress and ofcourse a short description. Thus every committee and group has their own little information page in the tool, though it might not be linked anywhere, as can be seen with the computer science student council:\n- if you navigate to [Start > Soziales & Politik > Ja, Studi-Themen! > studentische Selbstverwaltung > Fach](https://engagement.stuve-uni-kn.de/app?path=Root,Social,Gremien,GremienStud&answer=0) and click on \"Fachschaft Informatik\", you'll end up on the [student council website](https://fachschaft.inf.uni-konstanz.de)\n- if you instead simply use the path [/hsg/FSInformatik](https://engagement.stuve-uni-kn.de/hsg/FSInformatik), you'll end up on the special information page as generated from the extensive information that has been stored in the tool.\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://engagement.stuve-uni-kn.de/hsg/FSInformatik",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 50,
+              "searchText": "https://engagement.stuve-uni-kn.de/hsg/FSInformatik",
+              "context": "Behind the scenes extensive information about each committee / group is held in a CSV file, including but not limited to their website, social media accounts, email adress and ofcourse a short description. Thus every committee and group has their own little information page in the tool, though it might not be linked anywhere, as can be seen with the computer science student council:\n- if you navigate to [Start > Soziales & Politik > Ja, Studi-Themen! > studentische Selbstverwaltung > Fach](https://engagement.stuve-uni-kn.de/app?path=Root,Social,Gremien,GremienStud&answer=0) and click on \"Fachschaft Informatik\", you'll end up on the [student council website](https://fachschaft.inf.uni-konstanz.de)\n- if you instead simply use the path [/hsg/FSInformatik](https://engagement.stuve-uni-kn.de/hsg/FSInformatik), you'll end up on the special information page as generated from the extensive information that has been stored in the tool.\n\n### Editors"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://astro.build/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 62,
+              "searchText": "https://astro.build/",
+              "context": "\n## To the Stars\nI am currently working on a new version of the Engagement Wegweiser with [Astro](https://astro.build/) as its backbone and Vue for any interactive islands. The hope is to make the tool more robust, reduce loading times and improve the documentation of the tool. \n\nAdditionally we have decided to update the core mechanic with which committees and groups are recommended to the user: Instead of navigating through the afore mentioned question hierarchy down to a list of handpicked recommendations, the system will pivot to a questionaire with a number of category scores associated with every answer. Possible categories could be:"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.bpb.de/themen/wahl-o-mat/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 72,
+              "searchText": "https://www.bpb.de/themen/wahl-o-mat/",
+              "context": "- How important is the `social impact` of their work to the user\n\nThe details of the system still have to be thought out and discussed, but I imagine it will be fairly close to the principle of the [Frag Wahltraut](/projects/frag-wahltraut) system, which in turn basically works the same as the [Wahl-O-Mat](https://www.bpb.de/themen/wahl-o-mat/) that the [Federal Agency for Civic Education](https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/) hosts for national and state elections as well as the elections for the european parliament.\n\nA catalogue of questions will be assembled and given to student representatives of university committees and university groups such that they can give their personal scores. All the Engagement Wegweiser will then do is: compute the similarity between the users answers with the committees and groups to give a sorted listed of all areas of student participation within the university."
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 72,
+              "searchText": "https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/",
+              "context": "- How important is the `social impact` of their work to the user\n\nThe details of the system still have to be thought out and discussed, but I imagine it will be fairly close to the principle of the [Frag Wahltraut](/projects/frag-wahltraut) system, which in turn basically works the same as the [Wahl-O-Mat](https://www.bpb.de/themen/wahl-o-mat/) that the [Federal Agency for Civic Education](https://www.bpb.de/die-bpb/ueber-uns/federal-agency-for-civic-education/) hosts for national and state elections as well as the elections for the european parliament.\n\nA catalogue of questions will be assembled and given to student representatives of university committees and university groups such that they can give their personal scores. All the Engagement Wegweiser will then do is: compute the similarity between the users answers with the committees and groups to give a sorted listed of all areas of student participation within the university."
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 12.2 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 60,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 9
+    },
+    {
+      "file": "projects/Bluelock.md",
+      "displayName": "Bluelock - Bluetooth Screen Locker",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 34 characters",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 73 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 774 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://github.com/Pantonius/Bluelock",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 6,
+              "searchText": "https://github.com/Pantonius/Bluelock",
+              "context": "description: A little tool to automatically lock your screen when you leave your desk.\n---\n[Bluelock](https://github.com/Pantonius/Bluelock) is a little bash script I wrote that automatically locks your linux desktop when you leave your desk and conveniently unlocks it as soon as you get back. It accomplishes this with the bluetooth signal strength to your smartphone, smartwatch or any other device.\n\n## But how does it work?"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 10.5 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 78,
+      "issuesCount": 0,
+      "warningsCount": 2,
+      "noticesCount": 1
+    },
+    {
+      "file": "projects/Freiraum.mdx",
+      "displayName": "Freiraum",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 8 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 96 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": false,
+            "message": "\"Future Work / Other Ideas\" (H1) appears after H2",
+            "suggestion": "H1 should be the first heading or not used at all",
+            "severity": "warning",
+            "position": {
+              "line": 58,
+              "searchText": "# Future Work / Other Ideas",
+              "context": "The entire HTML of the timetable is generated via client-side javascript, which leads to pretty involved code, but gets the job done.\n\n# Future Work / Other Ideas\nAn initial proof of concept also included a map view intended to give a visual queue of where the room is located. I later dismissed the idea for the time being because obtaining the shape and geo data for each room would have entaled a lot of manual work.\n"
+            }
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 951 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": false,
+            "message": "Media missing alt text: ../attachments/freiraum_homepage.png",
+            "suggestion": "Add descriptive alt text for accessibility",
+            "severity": "error",
+            "position": {
+              "line": 36,
+              "searchText": "![](../attachments/freiraum_homepage.png)",
+              "context": "Freiraum mainly uses a timetable format with the rooms indicated by rows and the hours by columns. A vertical red indicator shows the current time over each row.\n\n![](../attachments/freiraum_homepage.png)\n\nWhile lectures and other occupancies appear grayed-out, the computed free spots inbetween are rendered in a light blue shade, making current and future availabilities tangible at a single glance. "
+            }
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 10.1 (Moderately easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 45,
+      "issuesCount": 1,
+      "warningsCount": 4,
+      "noticesCount": 0
+    }
+  ],
+  "lastScanTimestamp": 1775856757273,
+  "showNotices": true
+}
