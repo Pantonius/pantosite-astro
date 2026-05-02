@@ -54,14 +54,14 @@ import Socials from "./Socials.astro";
 	}
 
   .internal-links {
-
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     left: 0; 
     right: 0; 
+    pointer-events: none;
   }
 
   .internal-links a {
@@ -69,6 +69,7 @@ import Socials from "./Socials.astro";
 		color: var(--text);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+    pointer-events: auto;
   }
 
   .internal-links a.active {
