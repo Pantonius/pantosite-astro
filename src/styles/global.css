@@ -66,9 +66,15 @@ a {
 h1 {
 	text-align: center;
 }
+
 strong,
 b {
 	font-weight: 700;
+}
+
+mark {
+  background: var(--primary);
+  color: var(--background);
 }
 
 i {
