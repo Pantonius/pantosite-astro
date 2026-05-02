@@ -1,0 +1,42 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Main from "../components/Main.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+    <Main>
+      <div>
+      <h1>Slashes</h1>
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="/projects">/projects</a> Projects I have worked on</li>
+        <li><a href="/photography">/photography</a> Some of my photographic work &mdash; still a work in progress</li>
+        <li><a href="/blog">/blog</a> Some essays and freeform writing on various topics</li>
+        <li><a href="/about">/about</a> If you care about who I am</li>
+      </ul>
+
+      <h2 id="rss">RSS Feeds</h2>
+      <p>If you want to subscribe to any content you may use any of the following rss feeds.</p>
+      <ul>
+        <li><a href="/blog/rss.xml">/blog/rss.xml</a> Blog posts about various topics</li>
+        <li><a href="/projects/rss.xml">/projects/rss.xml</a> Posts about projects I have worked on</li>
+        <li><a href="/rss.xml">/rss.xml</a> All feeds in one</li>
+      </ul>
+      </div>
+		</Main>
+		<Footer />
+	</body>
+
+	<style>
+  </style>
+
+</html>

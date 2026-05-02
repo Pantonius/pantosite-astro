@@ -4,11 +4,17 @@ import Socials from "./Socials.astro";
 ---
 
 <footer>
-	&copy; {today.getFullYear()} <a href="/about">Anton</a>. All rights reserved.
+  <p>&copy; {today.getFullYear()} <a href="/about">Anton</a>. All rights reserved.</p>
   <Socials />
+  <div>
+    <a href="/slashes">/slashes</a> <a href="/slashes#rss">/rss</a>
+  </div>
 </footer>
 <style>
-	footer {
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 		background-color: var(--background-soft);
 		padding: 1rem 1rem 2rem;
 		width: 100%;
